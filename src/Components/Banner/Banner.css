@@ -1,0 +1,104 @@
+.Banner {
+    background-size: cover;
+    height: 500px;
+}
+
+.loadingScreen {
+    height: 500px;
+    width: 100%;
+    background: #000;
+    display: flex;
+    position: fixed;
+    z-index: 55;
+    align-items: center;
+    transition: ease-in-out;
+    justify-content: center;
+}
+
+.content {
+    padding-top: 140px;
+    height: 190px;
+    padding-left: 15px;
+
+}
+
+.titles {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0, 3rem;
+
+}
+
+.button {
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+}
+
+.BannerButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.button:hover {
+    color: black;
+    background-color: #e6e6ee;
+}
+
+.Description {
+    max-width: 500px;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 1rem;
+    height: 80px;
+    max-width: 360px;
+    color: black;
+}
+
+.fade_bottom {
+    background-image: linear-gradient(180deg, transperent, rgba(37, 37, 37, .61), #111);
+    height: 7.4rem;
+
+}
+
+@media screen and (max-width:480px) {
+    .Banner {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    .content {
+        height: 150px;
+        padding: 0;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        bottom: 0;
+        margin-left: 10px;
+    }
+
+    .titles {
+        color: #111;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .Description {
+        display: none;
+    }
+}

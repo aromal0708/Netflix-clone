@@ -1,0 +1,228 @@
+.singleBody{
+    overflow: scroll;
+}
+
+.loadingScreen {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    position: fixed;
+    z-index: 55;
+    align-items: center;
+    justify-content: center;
+}
+
+.singleBody::-webkit-scrollbar{
+    display: none;
+}
+
+.parent {
+    background: black;
+    position: relative;
+}
+
+.parnet::-webkit-scrollbar {
+    display: none;
+}
+
+.top {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+
+.top::-webkit-scrollbar {
+    display: none;
+}
+
+
+.topLeft {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topLeftImage {
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    background: transparent;
+    object-fit: cover;
+}
+
+.topRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    gap: 15px;
+}
+
+.details {
+    margin-top: 100px;
+    height: 40px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc{
+    max-width: 600px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1px;
+}
+
+.playButton {
+    color: white;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.5);
+    font-weight: 700;
+}
+
+.playButton:hover {
+    background-color: #e6e6ee;
+    color: black;
+}
+
+.watchlist {
+    color: white;
+    height: 35px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.5);
+    font-weight: 700;
+}
+
+.watchlist:hover {
+    background-color: #e6e6ee;
+    color: black;
+}
+
+.bottom {
+    width: 100%;
+
+}
+
+
+@media screen and (max-width:480px) {
+    .singleBody{
+        overflow: scroll;
+    }
+
+    .singleBody::-webkit-scrollbar{
+        display: none;
+    }
+
+    .parent {
+        background: black;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .top {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+
+    .topLeft {
+        width: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topLeftImage {
+        width: 140px;
+        height: 240px;
+        border-radius: 8px;
+        background: transparent;
+        object-fit: cover;
+    }
+
+    .desc{
+        display: none;
+    }
+
+    .topRight {
+        display: flex;
+        gap: 5px;
+        margin-left: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+    }
+
+    .details {
+        margin-top: 0px;
+        max-height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details_title{
+        font-size: 17px;
+    }
+
+    .buttons {
+       display: flex;
+        gap: 1px;
+    }
+
+    .playButton {
+        color: white;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-weight: 700;
+    }
+
+    .watchlist {
+        color: white;
+        height: 35px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-weight: 700;
+    }
+}

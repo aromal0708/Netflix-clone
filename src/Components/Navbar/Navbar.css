@@ -1,0 +1,64 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+
+
+}
+
+
+.logo {
+    position: fixed;
+    left: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.logOut {
+    position: fixed;
+    right: 20px;
+    width: 150px;
+}
+
+.smallLogo {
+    position: fixed;
+    left: 20px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.smallLogOut {
+    position: fixed;
+    right: 20px;
+    width: 80px;
+    height: 60px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: red;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:480px) {
+
+    .navbar {
+        width: 100vw;
+        height: 25px;
+    }
+
+    .logo{
+        position: fixed;
+        left: 20px;
+        width: 70px;
+    }
+
+}

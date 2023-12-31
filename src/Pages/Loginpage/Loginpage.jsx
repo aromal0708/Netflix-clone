@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { Navbar } from "../../Components/NavBar/Navbar";
+import { Navbar } from "../../Components/Navbar/Navbar";
 
 
 const Loginpage = () => {

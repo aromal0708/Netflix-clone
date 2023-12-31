@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Homepage.css";
-import { Navbar } from "../../Components/NavBar/Navbar";
+import { Navbar } from "../../Components/Navbar/Navbar";
 import { Banner } from "../../Components/Banner/Banner";
 import { Rowpost } from "../../Components/Rowpost/Rowpost"
 import {

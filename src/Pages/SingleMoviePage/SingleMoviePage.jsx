@@ -3,7 +3,7 @@ import "./SingleMoviePage.css";
 import { useParams } from "react-router-dom";
 import { trending } from "../../Components/Urls"
 import { ScaleLoader } from "react-spinners";
-import { Navbar } from "../../Components/NavBar/Navbar";
+import { Navbar } from "../../Components/Navbar/Navbar";
 import {Rowpost} from "../../Components/Rowpost/Rowpost";
 import { useAxios } from "../../hooks/useAxios";
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { Auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
-import {Navbar} from "../../Components/NavBar/Navbar";
+import {Navbar} from "../../Components/Navbar/Navbar";
 
 const Register = () => {
   const navigate = useNavigate();
